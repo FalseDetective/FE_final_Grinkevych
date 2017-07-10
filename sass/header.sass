@@ -1,0 +1,373 @@
+@import bourbon
+@import vars.sass
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+
+h2, h3, h4
+	line-height: 1.5
+
+p
+	line-height: 2
+
+//Menu 
+header
+	ul
+	  display: inline-block
+	  text-align: center
+	  padding: 0
+	  margin: 0
+	  list-style: none
+	  position: fixed
+	  width: 100%
+	  z-index: 2
+	  &.menu > li
+	    display: inline-block
+	    text-align: center
+	    width: 19%
+	    margin-left: -4px
+	    position: relative
+	    > a
+	      display: block
+	      padding: 15px
+	      color: rgba(#fff, 0.8)
+	      background-color: rgba($general, 0.85)
+	      text-decoration: none
+	      font-weight: 400
+	      &:hover
+	        background-color: rgba(darken($general, 7%), 0.85)
+	  &.menu > li:nth-child(n+2)
+	  	border-left: 1px solid rgba(#fff, 0.85)
+	  &.submenu
+	    display: none
+	    position: absolute
+	    width: 100%
+	    top: 55px
+	    left: 0
+	    > li
+	      display: block
+	      > a
+	        display: block
+	        padding: 10px
+	        color: #fff
+	        background-color: rgba(lighten($general, 10%), 0.75)
+	        text-decoration: none
+	        &:hover
+	          text-decoration: underline
+	  &.menu > li:hover > ul.submenu
+	    display: block
+
+//Slider
+
+#slider
+  position: relative
+  overflow: hidden
+  border-radius: 4px
+  z-index: 0
+  height: 100vh
+  ul
+    position: relative
+    height: 200px
+    list-style: none
+    li
+      position: relative
+      display: block
+      float: left
+      margin: 0
+      padding: 0
+      width: 25%
+      height: 100vh
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      .slide-text
+      	position: absolute
+      	bottom: 70px
+      	left: 5%
+      	right: 20%
+      	border-radius: 2px
+      	h2
+      		font-size: 30px
+      		font-weight: 500
+      	p
+      		font-size: 25px
+      		font-weight: 300
+      		font-style: italic
+      		text-align: justify
+	      h2, p
+	      	text-align: left
+	      	color: #fff
+	      	text-shadow: 2px 2px 2px black
+
+.slider_option
+  position: relative
+  margin: 10px auto
+  width: 160px
+  font-size: 18px
+
+
+.hotelLifeStyleContent
+	text-align: justify
+	margin: 120px 10%
+	h3
+		color: darken($general, 7%)
+		font-weight: 600
+		text-align: center
+		margin-bottom: 50px
+	p
+		color: $general
+		font-weight: 400
+		line-height: 2.3
+
+.foooter
+	background-color: darken($general, 10%)
+	padding: 20px 5%
+	>div
+		width: 49%
+		display: inline-block
+		vertical-align: top
+		&.quickLinks
+			font-size: 16px
+			color: #ecf0f1
+			ul
+				list-style-type: none
+				line-height: 2.5
+				li
+					a
+						color: #ecf0f1
+						text-decoration: none
+				.shares
+					.fa
+						width: 30px
+						font-size: 40px
+					.fa:hover
+						color: #fff
+						cursor: pointer
+						text-shadow: 0px 0px 7px #666
+					.fa:nth-child(n+2)
+							padding-left: 25px
+		&.contact
+			ul
+				padding: 0
+				list-style-type: none
+				li
+					color: #fff
+					&:nth-child(n+2)
+						margin-top: 15px
+					.fa
+						font-size: 25px
+						width: 26px
+						vertical-align: top
+					.contactText
+						display: inline-block
+						h3,p
+							margin: 0
+
+						a
+								color: white
+				.shares
+					.fa
+						width: 30px
+						font-size: 40px
+					.fa:hover
+						color: #fff
+						cursor: pointer
+						text-shadow: 0px 0px 7px #666
+					.fa:nth-child(n+2)
+							padding-left: 25px
+
+.contactData
+	margin-left: 70px
+	.contact
+		margin-top: 38px
+		color: $general
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				font-size: 16px
+				h3, p
+					display: inline-block
+				a
+					color: $general
+.form
+	vertical-align: top
+	text-align: center
+	margin-left: 10%
+	.formWrapper
+		margin: auto
+		display: block
+		width: 210px
+		form
+			text-align: left
+			color: $general
+			label
+				margin-top: 10px
+			input
+				border-radius: 5px
+				border: 2px solid $general
+				font-size: 18px
+			input[type="submit"]
+				background-color: $general
+				color: #fff
+				margin-right: 20px 
+				&:hover
+					background-color: darken($general, 7%)
+					cursor: pointer
+			input:nth-child(n+2)
+				margin-top: 10px
+				margin-bottom: 10px
+
+
+
+.contactInformation
+	padding: 80px 0
+	.contactData, .form
+		width: 40%
+		display: inline-block
+		h2
+			color: #ac8f70
+			font-size: 20px
+			font-weight: 600
+
+#map
+	margin: auto
+	text-align: center
+
+//Gallery 
+
+
+#gallery
+	padding-top: 75px
+	font-size: 0
+	div
+		display: inline-block
+		width: 30%
+		background-size: cover
+		margin: 1%
+		border: 3px solid $general
+		vertical-align: top
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.5)
+		border-radius: 5px
+	
+
+#navigation
+	color: $general
+	
+	font-size: 3em
+	//margin-left: 50px
+	
+	#pgLeft 
+		display: inline-block
+		width: 44%
+		margin-left: 5%
+		span:hover
+			cursor: pointer
+
+	#pgRight
+		display: inline-block
+		text-align: right
+		width: 44%
+		margin-right: 5%
+		span:hover
+			cursor: pointer
+
+//ROOMS
+
+#rooms
+	z-index: 0
+	padding: 5%
+	h2
+		color: darken($general, 10%)
+	.room
+		border: solid $general
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.5)
+		border-radius: 10px
+		margin: 20px 5%
+
+
+	.image
+		border-radius: 10px
+		width: 200px
+		height: 200px
+		display: inline-block
+		background-image:  url(../img/assd.jpg)
+		background-size: cover
+		margin-top: 10px
+		margin-left: 10px
+
+	.description
+		display: inline-block
+		vertical-align: top
+		width: 70%
+		padding-left: 15px
+		h3
+			color: darken($general, 20%)
+
+	td:nth-child(2n-1) 
+		font-weight: bold
+	
+	td:nth-child(2n) 
+		padding-left: 2%
+		font-style: italic
+
+// BOOKING
+.booking
+	padding: 5%
+	div
+		z-index: 0
+		//padding: 5%
+		border: solid $general
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.5)
+		border-radius: 10px
+		margin: 20px 1%
+	h3
+		margin-left: 3%
+	table
+		width: 100%
+	td
+		text-align: center
+		border-top: solid 0.3px lightgray
+	form
+		margin: 3%
+	input
+		border-radius: 5px
+		margin: 10px
+	select
+		border-radius: 5px
+		margin: 10px
+	input[type="button"]
+		background-color: $general
+		color: lighten($general, 40%)
+		
+#filtredRooms
+	display: none
+	
+#bookingForm
+	display: none
+	padding: 20px 5%
+	label
+		color: darken($general, 20%)
+		font-weight: bold
+	input
+		width: 100%
+		font-size: 1em
+		
+
+	input[type="button"]
+				background-color: $general
+				color: #fff
+				width: 30%
+	textarea
+		width: 100%
+		font-size: 1em
+		text-align: left
+		margin-left: 10px

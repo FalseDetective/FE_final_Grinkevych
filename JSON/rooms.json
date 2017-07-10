@@ -1,0 +1,136 @@
+{
+  "rooms": [
+    {
+    "id": 1,
+    "name": "President suite",
+    "url": "rooms.html#luxury",
+    "class": "Luxury",
+    "places": 2,
+    "price": 1000,
+    "quantity": 3
+    },
+
+    {
+    "id": 2,
+    "name": "Penthouse",
+    "url": "rooms.html#luxury",
+    "class": "Luxury",
+    "places": 2,
+    "price": 800,
+    "quantity": 2
+    },
+
+    {
+    "id": 3,
+    "name": "Romantic",
+    "url": "rooms.html#luxury",
+    "class": "Luxury",
+    "places": 2,
+    "price": 800,
+    "quantity": 5
+    },
+
+    {
+    "id": 4,
+    "name": "Familly suite",
+    "url": "rooms.html#standart",
+    "class": "Standart",
+    "places": 5,
+    "price": 600,
+    "quantity": 5
+    },
+
+    {
+    "id": 5,
+    "name": "Standart",
+    "url": "rooms.html#standart",
+    "class": "Standart",
+    "places": 2,
+    "price": 400,
+    "quantity": 15
+    },
+
+    {
+    "id": 6,
+    "name": "Double room",
+    "url": "rooms.html#econom",
+    "class": "Econom",
+    "places": 2,
+    "price": 200,
+    "quantity": 15
+    },
+
+    {
+    "id": 7,
+    "name": "Single room",
+    "url": "rooms.html#econom",
+    "class": "Econom",
+    "places": 1,
+    "price": 100,
+    "quantity": 20
+    }
+
+  ],
+
+  "books": [
+    {
+        "id": 1,
+        "fromDate": "2017-07-12",
+        "toDate": "2017-07-15"
+    },
+
+    {
+        "id": 2,
+        "fromDate": "2017-07-14",
+        "toDate": "2017-07-20"
+    },
+
+    {
+        "id": 2,
+        "fromDate": "2017-07-13",
+        "toDate": "2017-08-15"
+    },
+
+    {
+        "id": 4,
+        "fromDate": "2017-07-10",
+        "toDate": "2017-07-15"
+    },
+
+    {
+        "id": 5,
+        "fromDate": "2017-07-16",
+        "toDate": "2017-08-01"
+    },
+
+    {
+        "id": 7,
+        "fromDate": "2017-07-12",
+        "toDate": "2017-07-30"
+    },
+
+    {
+        "id": 5,
+        "fromDate": "2017-07-22",
+        "toDate": "2017-07-27"
+    },
+
+    {
+        "id": 6,
+        "fromDate": "2017-07-11",
+        "toDate": "2017-07-21"
+    },
+
+    {
+        "id": 5,
+        "fromDate": "2017-07-18",
+        "toDate": "2017-08-05"
+    },
+
+    {
+        "id": 6,
+        "fromDate": "2017-07-12",
+        "toDate": "2017-07-15"
+    }
+  ]
+}

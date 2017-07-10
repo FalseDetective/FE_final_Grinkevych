@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Бронирование</title>
+	
+	<link rel="stylesheet" href="css/header.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<ul class="menu">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="rooms.html">Номера</a>
+				<ul class="submenu">
+					<li><a href="rooms.html#luxury">Luxury</a></li>
+					<li><a href="rooms.html#standart">Standart</a></li>
+					<li><a href="rooms.html#econom">Econom</a></li>
+				</ul>
+			</li>
+			<li><a href="booking.html">Бронирование</a></li>
+			<li><a href="gallery.html">Фотогалерея</a></li>
+			<li><a href="contacts.html">Контакты</a></li>
+		</ul>
+	</header>
+	<section class="booking">
+		
+		<div id="filter">
+			<h3>Выберите желаемые параметры</h3>
+			<form>
+				<label for="fromDate">Дата заезда:</label>
+				<input id="fromDate" required type="date">
+				<label for="toDate">Дата выезда:</label>
+				<input id="toDate" required type="date">
+				
+				<label for="class">Класс:</label>
+				<select id="class">
+  					<option>Все</option>
+  					<option>Luxury</option>
+  					<option>Standart</option>
+  					<option>Econom</option>
+				</select>
+
+				<label for="places">К-во спальных мест:</label>
+				<select id="places">
+  					<option>Любое</option>
+  					<option>1</option>
+  					<option>2</option>
+  					<option>5</option>
+				</select>
+
+				<input type="button" id="filtrate" value="Фильтровать"> </input>
+			</form>
+		</div>
+
+		<div id="filtredRooms">
+			<table>
+				<tr>
+					<th>Название</th><th>Класс</th><th>Мест</th><th>Свободно в выбранный период</th><th>Цена</th><th>Кол-во</th>
+				</tr>
+			</table>
+		</div>
+
+		<div id="bookingForm">
+			<form action="">
+				<label for="name">Имя: </label><br>
+				<input id=name type="text" required><br>
+				<label for="phoneNumber">Телефон: </label><br>
+				<input id=phoneNumber type="tel" required><br>
+				<label for="email">Email: </label><br>
+				<input id=email type="email" required><br>
+				<label for="commentary">Комментарий: </label><br>
+				<textarea id="commentary"></textarea><br>
+				
+				<input id="book" type="button" value="забронировать">
+			</form>
+		</div>
+	</section>
+	<div class="foooter">
+		<div class="contact">
+			<ul>
+				<li>
+					<div class="contactText">
+						<h3><span class="fa fa-phone"></span> Телефон</h3>
+						<p>+38 (044) 777 55 77</p>
+					</div>
+				</li>
+				<li>
+					<div class="contactText">
+						<h3><span class="fa fa-envelope-open-o"></span> Email</h3>
+						<p><a href="mailto:UltraTopHotel@gmail.com">UltraTopHotel@gmail.com</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="contactText">
+						<h3><span class="fa fa-map-marker" aria-hidden="true"></span> Адрес</h3>
+						<p>ул. Пушкинская, 5-7/29, Киев 01004, Украина</p>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="quickLinks">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="rooms.html">Номера</a></li>
+				<li><a href="booking.html">Бронирование</a></li>
+				<li><a href="gallery.html">Фотогалерея</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+				<li class="shares">
+					<span class="fa fa-facebook-official"></span>
+					<span class="fa fa-vk"></span>
+					<span class="fa fa-instagram"></span>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<script src="https://use.fontawesome.com/887c958789.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="js/booking.js"></script>
+</body>
+</html>
